@@ -1,4 +1,4 @@
-nginx-log-analyzer
+#nginx-log-analyzer
 
 A small Python tool that reads an NGINX access log and prints a report: status codes, 5xx error rate, top IPs, top paths, and requests per hour. Lines that can't be parsed are skipped and listed instead of crashing the program.
 
