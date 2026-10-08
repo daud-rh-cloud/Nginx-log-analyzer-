@@ -58,11 +58,4 @@ so lines with any other count are rejected. Each piece is then split on spaces t
 the IP, timestamp, method, path, status, and bytes. Splitting on `"` first means user
 agents containing spaces, such as `Mozilla/5.0 (Windows NT 10.0; ...)`, don't break the parser.
 
-## Roadmap
 
-- [ ] Reject lines with invalid timestamps (hour 0–23, minute/second 0–59)
-- [ ] Use `LogEntry` objects instead of lists
-- [ ] Write the report to `report.txt` and bad lines to `rejected.log`
-- [ ] Warn when more than 10% of lines are rejected
-- [ ] Custom exceptions (`SourceError`, `ParseError`, `ReportError`)
-- [ ] Read the log path from the command line
